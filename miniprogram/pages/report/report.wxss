@@ -1,0 +1,5 @@
+/* miniprogram/pages/report/report.wxss */
+.cell-panel-demo{
+    display: block;
+    margin-top: 15px;
+}

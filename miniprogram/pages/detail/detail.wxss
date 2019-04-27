@@ -1,0 +1,4 @@
+/* miniprogram/pages/detail/detail.wxss */.cell-panel-demo{
+    display: block;
+    margin-top: 0px;
+}

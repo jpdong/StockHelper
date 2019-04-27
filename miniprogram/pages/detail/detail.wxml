@@ -1,0 +1,37 @@
+<!--miniprogram/pages/detail/detail.wxml-->
+<i-panel class="cell-panel-demo">
+    <i-cell title="生产资产" label="" value="{{producation_asset}}"></i-cell>
+</i-panel>
+<i-panel class="cell-panel-demo">
+    <i-cell title="应收" label="" value="{{receivable}}"></i-cell>
+</i-panel>
+<i-panel class="cell-panel-demo">
+    <i-cell title="货币资金" label="" value="{{money}}"></i-cell>
+</i-panel>
+<i-panel class="cell-panel-demo">
+    <i-cell title="有息负债" label="" value="{{liability}}"></i-cell>
+</i-panel>
+<i-panel class="cell-panel-demo">
+    <i-cell title="非主业资产" label="" value="{{slideline_asset}}"></i-cell>
+</i-panel>
+<i-panel class="cell-panel-demo">
+    <i-cell title="利润总额" label="" value="{{total_profit}}"></i-cell>
+</i-panel>
+<i-panel class="cell-panel-demo">
+    <i-cell title="总资产" label="" value="{{total_asset}}"></i-cell>
+</i-panel>
+<i-panel class="cell-panel-demo">
+    <i-cell title="生产资产占比" label="" value="{{producation_ratio}}%"></i-cell>
+</i-panel>
+<i-panel class="cell-panel-demo">
+    <i-cell title="应收占比" label="应收/总资产" value="{{receivable_ratio}}%"></i-cell>
+</i-panel>
+<i-panel class="cell-panel-demo">
+    <i-cell title="资债比" label="货币资金/有息负债" value="{{moneyLiability_ratio}}%"></i-cell>
+</i-panel>
+<i-panel class="cell-panel-demo">
+    <i-cell title="非主业资产占比" label="非主业资产/总资产" value="{{slideline_ratio}}%"></i-cell>
+</i-panel>
+<i-panel class="cell-panel-demo">
+    <i-cell title="生产资产回报率" label="利润总额/生产资产" value="{{producation_response_ratio}}%"></i-cell>
+</i-panel>

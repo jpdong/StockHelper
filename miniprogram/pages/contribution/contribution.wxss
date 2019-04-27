@@ -1,0 +1,10 @@
+/* miniprogram/pages/contribution/contribution.wxss */
+.main-button {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.weui-input {
+ width: 80%;
+}

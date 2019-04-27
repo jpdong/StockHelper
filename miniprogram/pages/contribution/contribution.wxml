@@ -1,0 +1,62 @@
+<view class="weui-cells__title">*单位：亿元人民币*没有的项目请填0*</view>
+<view class="weui-cells__title">股票名称</view>
+<view class="weui-cells weui-cells_after-title">
+  <view class="weui-cell weui-cell_input">
+    <input class="weui-input" bindblur='inputStockName' placeholder="" />
+  </view>
+</view>
+<view class="weui-cells__title">股票代码</view>
+<view class="weui-cells weui-cells_after-title">
+  <view class="weui-cell weui-cell_input">
+    <input class="weui-input" bindblur='inputStockCode' placeholder="{{stock.name}}" />
+  </view>
+</view>
+<view class="weui-cells__title">年份</view>
+<view class="weui-cells weui-cells_after-title">
+  <view class="weui-cell weui-cell_input">
+    <input class="weui-input" bindblur='inputYear' placeholder="" />
+  </view>
+</view>
+<view class="weui-cells__title">生产资产</view>
+<view class="weui-cells weui-cells_after-title">
+  <view class="weui-cell weui-cell_input">
+    <input class="weui-input" bindblur='inputProducationAsset' placeholder="" />
+  </view>
+</view>
+<view class="weui-cells__title">应收</view>
+<view class="weui-cells weui-cells_after-title">
+  <view class="weui-cell weui-cell_input">
+    <input class="weui-input" bindblur='inputReceivable' placeholder="" />
+  </view>
+</view>
+<view class="weui-cells__title">货币资金</view>
+<view class="weui-cells weui-cells_after-title">
+  <view class="weui-cell weui-cell_input">
+    <input class="weui-input" bindblur='inputMoney' placeholder="" />
+  </view>
+</view>
+<view class="weui-cells__title">有息负债</view>
+<view class="weui-cells weui-cells_after-title">
+  <view class="weui-cell weui-cell_input">
+    <input class="weui-input" bindblur='inputLiability' placeholder="" />
+  </view>
+</view>
+<view class="weui-cells__title">非主业资产</view>
+<view class="weui-cells weui-cells_after-title">
+  <view class="weui-cell weui-cell_input">
+    <input class="weui-input" bindblur='inputSlidelineAsset' placeholder="" />
+  </view>
+</view>
+<view class="weui-cells__title">利润总额</view>
+<view class="weui-cells weui-cells_after-title">
+  <view class="weui-cell weui-cell_input">
+    <input class="weui-input" bindblur='inputTotalProfit' placeholder="" />
+  </view>
+</view>
+<view class="weui-cells__title">总资产</view>
+<view class="weui-cells weui-cells_after-title">
+  <view class="weui-cell weui-cell_input">
+    <input class="weui-input" bindblur='inputTotalAsset' placeholder="" />
+  </view>
+</view>
+<button class="main-button" type="primary" loading="{{submiting}}" bindtap='contributeData'>提交</button>
