@@ -126,7 +126,7 @@ Page({
     this.setData ({
       submiting:true
     })
-    uploadData(new Stock.Stock(this.name, this.code), this.year, this.producationAsset, this.receivable, this.money, this.liability, this.slidelineAsset, this.totalProfit, this.totalAsset)
+    uploadData(new Stock.Stock(this.data.name, this.data.code), this.data.year, this.data.producationAsset, this.data.receivable, this.data.money, this.data.liability, this.data.slidelineAsset, this.data.totalProfit, this.data.totalAsset)
   }
 })
 
@@ -157,6 +157,7 @@ function uploadData(stock, year, producationAsset, receivable, money, liability,
           name:"",
           submiting: false
         })
+        clearData()
       },
       fail(res) {
         console.log("uploadData error:" + res)
@@ -167,6 +168,32 @@ function uploadData(stock, year, producationAsset, receivable, money, liability,
     })
   } else {
     Util.dialog("提示","请填写所有的项目，未知或没有请填写0")
+    pageInstance.setData({
+      submiting: false
+    })
   }
   
+}
+
+function clearData() {
+  pageInstance.data.year = ""
+  pageInstance.data.producationAsset = ""
+  pageInstance.data.receivable = ""
+  pageInstance.data.money = ""
+  pageInstance.data.liability = ""
+  pageInstance.data.slidelineAsset = ""
+  pageInstance.data.totalProfit = ""
+  pageInstance.data.totalAsset = ""
+  pageInstance.setData({
+    name: "",
+    code: "",
+    year: "",
+    producationAsset: "",
+    receivable: "",
+    money: "",
+    liability: "",
+    slidelineAsset: "",
+    totalProfit: "",
+    totalAsset: ""
+  })
 }

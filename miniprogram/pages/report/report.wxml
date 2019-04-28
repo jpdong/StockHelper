@@ -1,4 +1,4 @@
 <!--miniprogram/pages/report/report.wxml-->
 <i-panel wx:for="{{reportList}}" wx:key="{{item._id}}" class="cell-panel-demo">
-    <i-cell title="{{item.stock_name}}" label="{{item.year}}" value="" is-link url="../detail/detail?_id={{item._id}}"></i-cell>
+  <i-cell title="{{item.stock_name}}" label="{{item.year}}" value="" is-link url="../detail/detail?_id={{item._id}}"></i-cell>
 </i-panel>
