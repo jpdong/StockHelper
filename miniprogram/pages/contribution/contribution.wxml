@@ -2,13 +2,13 @@
 <view class="weui-cells__title">股票名称</view>
 <view class="weui-cells weui-cells_after-title">
   <view class="weui-cell weui-cell_input">
-    <input class="weui-input" bindblur='inputStockName' placeholder="" />
+    <input class="weui-input" bindblur='inputStockName' placeholder="" value="{{name}}"/>
   </view>
 </view>
 <view class="weui-cells__title">股票代码</view>
 <view class="weui-cells weui-cells_after-title">
   <view class="weui-cell weui-cell_input">
-    <input class="weui-input" bindblur='inputStockCode' placeholder="{{stock.name}}" />
+    <input class="weui-input" bindblur='inputStockCode' placeholder="" value="{{code}}"/>
   </view>
 </view>
 <view class="weui-cells__title">年份</view>

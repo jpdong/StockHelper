@@ -176,6 +176,8 @@ function uploadData(stock, year, producationAsset, receivable, money, liability,
 }
 
 function clearData() {
+  pageInstance.data.name = ""
+  pageInstance.data.code = ""
   pageInstance.data.year = ""
   pageInstance.data.producationAsset = ""
   pageInstance.data.receivable = ""

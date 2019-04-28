@@ -1,24 +1,24 @@
 <!--miniprogram/pages/detail/detail.wxml-->
 <i-panel class="cell-panel-demo">
-    <i-cell title="生产资产" label="" value="{{producation_asset}}"></i-cell>
+    <i-cell title="生产资产" label="" value="{{producation_asset}} 亿元"></i-cell>
 </i-panel>
 <i-panel class="cell-panel-demo">
-    <i-cell title="应收" label="" value="{{receivable}}"></i-cell>
+    <i-cell title="应收" label="" value="{{receivable}} 亿元"></i-cell>
 </i-panel>
 <i-panel class="cell-panel-demo">
-    <i-cell title="货币资金" label="" value="{{money}}"></i-cell>
+    <i-cell title="货币资金" label="" value="{{money}} 亿元"></i-cell>
 </i-panel>
 <i-panel class="cell-panel-demo">
-    <i-cell title="有息负债" label="" value="{{liability}}"></i-cell>
+    <i-cell title="有息负债" label="" value="{{liability}} 亿元"></i-cell>
 </i-panel>
 <i-panel class="cell-panel-demo">
-    <i-cell title="非主业资产" label="" value="{{slideline_asset}}"></i-cell>
+    <i-cell title="非主业资产" label="" value="{{slideline_asset}} 亿元"></i-cell>
 </i-panel>
 <i-panel class="cell-panel-demo">
-    <i-cell title="利润总额" label="" value="{{total_profit}}"></i-cell>
+    <i-cell title="利润总额" label="" value="{{total_profit}} 亿元"></i-cell>
 </i-panel>
 <i-panel class="cell-panel-demo">
-    <i-cell title="总资产" label="" value="{{total_asset}}"></i-cell>
+    <i-cell title="总资产" label="" value="{{total_asset}} 亿元"></i-cell>
 </i-panel>
 <i-panel class="cell-panel-demo">
     <i-cell title="生产资产占比" label="" value="{{producation_ratio}}%"></i-cell>
