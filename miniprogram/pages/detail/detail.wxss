@@ -1,4 +1,10 @@
-/* miniprogram/pages/detail/detail.wxss */.cell-panel-demo{
+/* miniprogram/pages/detail/detail.wxss */
+.cell-panel-demo{
     display: block;
     margin-top: 0px;
+}
+.text-tips{
+  margin: 20px;
+  font-size: 12px;
+  color: #80848f;
 }

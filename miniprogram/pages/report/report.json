@@ -4,5 +4,6 @@
     "i-button": "../../iView/dist/button/index",
     "i-cell-group": "../../iView/dist/cell-group/index",
     "i-cell": "../../iView/dist/cell/index"
-  }
+  },
+  "enablePullDownRefresh": true
 }

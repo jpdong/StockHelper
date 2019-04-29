@@ -1,37 +1,42 @@
 <!--miniprogram/pages/detail/detail.wxml-->
 <i-panel class="cell-panel-demo">
-    <i-cell title="生产资产" label="" value="{{producation_asset}} 亿元"></i-cell>
+  <i-cell title="生产资产" label="" value="{{producation_asset}} 亿元"></i-cell>
 </i-panel>
 <i-panel class="cell-panel-demo">
-    <i-cell title="应收" label="" value="{{receivable}} 亿元"></i-cell>
+  <i-cell title="应收" label="" value="{{receivable}} 亿元"></i-cell>
 </i-panel>
 <i-panel class="cell-panel-demo">
-    <i-cell title="货币资金" label="" value="{{money}} 亿元"></i-cell>
+  <i-cell title="货币资金" label="" value="{{money}} 亿元"></i-cell>
 </i-panel>
 <i-panel class="cell-panel-demo">
-    <i-cell title="有息负债" label="" value="{{liability}} 亿元"></i-cell>
+  <i-cell title="有息负债" label="" value="{{liability}} 亿元"></i-cell>
 </i-panel>
 <i-panel class="cell-panel-demo">
-    <i-cell title="非主业资产" label="" value="{{slideline_asset}} 亿元"></i-cell>
+  <i-cell title="非主业资产" label="" value="{{slideline_asset}} 亿元"></i-cell>
 </i-panel>
 <i-panel class="cell-panel-demo">
-    <i-cell title="利润总额" label="" value="{{total_profit}} 亿元"></i-cell>
+  <i-cell title="利润总额" label="" value="{{total_profit}} 亿元"></i-cell>
 </i-panel>
 <i-panel class="cell-panel-demo">
-    <i-cell title="总资产" label="" value="{{total_asset}} 亿元"></i-cell>
+  <i-cell title="总资产" label="" value="{{total_asset}} 亿元"></i-cell>
 </i-panel>
 <i-panel class="cell-panel-demo">
-    <i-cell title="生产资产占比" label="" value="{{producation_ratio}}%"></i-cell>
+  <i-cell title="生产资产占比" label="生产资产/总资产" value="{{producation_ratio}}%"></i-cell>
 </i-panel>
+<view class="text-tips">*占比大的为重资产公司，会固定地产生大量折旧和摊销，依赖大量产品销售来分摊固定成本；占比小的为轻资产公司，主要是可变成本，成本会随着销量变化；一般轻资产公司更容易在逆境中保持盈利能力。</view>
 <i-panel class="cell-panel-demo">
-    <i-cell title="应收占比" label="应收/总资产" value="{{receivable_ratio}}%"></i-cell>
+  <i-cell title="应收占比" label="应收/总资产" value="{{receivable_ratio}}%"></i-cell>
 </i-panel>
+<view class="text-tips">*需要对比同行业其他公司数据，占比越小越好。</view>
 <i-panel class="cell-panel-demo">
-    <i-cell title="资债比" label="货币资金/有息负债" value="{{moneyLiability_ratio}}%"></i-cell>
+  <i-cell title="资债比" label="货币资金/有息负债" value="{{moneyLiability_ratio}}%"></i-cell>
 </i-panel>
+<view class="text-tips">*货币资金至少要能偿还有息负债。</view>
 <i-panel class="cell-panel-demo">
-    <i-cell title="非主业资产占比" label="非主业资产/总资产" value="{{slideline_ratio}}%"></i-cell>
+  <i-cell title="非主业资产占比" label="非主业资产/总资产" value="{{slideline_ratio}}%"></i-cell>
 </i-panel>
+<view class="text-tips">*看一个公司是否专注于主营业务，占比越小越好。</view>
 <i-panel class="cell-panel-demo">
-    <i-cell title="生产资产回报率" label="利润总额/生产资产" value="{{producation_response_ratio}}%"></i-cell>
+  <i-cell title="生产资产回报率" label="利润总额/生产资产" value="{{producation_response_ratio}}%"></i-cell>
 </i-panel>
+<view class="text-tips">*与当年社会资本平均回报率比较，越大越好。</view>

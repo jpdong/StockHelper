@@ -1,4 +1,4 @@
-<view class="weui-cells__title">*单位：亿元人民币*没有的项目请填0*</view>
+<view class="weui-cells__title">*单位：亿元人民币* *没有的项目请填 0*</view>
 <view class="weui-cells__title">股票名称</view>
 <view class="weui-cells weui-cells_after-title">
   <view class="weui-cell weui-cell_input">
@@ -17,13 +17,13 @@
     <input class="weui-input" bindblur='inputYear' placeholder="" value="{{year}}"/>
   </view>
 </view>
-<view class="weui-cells__title">生产资产</view>
+<view class="weui-cells__title">生产资产（固定资产、在建工程、工程物资、无形资产）</view>
 <view class="weui-cells weui-cells_after-title">
   <view class="weui-cell weui-cell_input">
     <input class="weui-input" bindblur='inputProducationAsset' placeholder="" value="{{producationAsset}}"/>
   </view>
 </view>
-<view class="weui-cells__title">应收</view>
+<view class="weui-cells__title">应收（“应收”条目的数据总和减去“应收票据”里的银行承兑汇票金额）</view>
 <view class="weui-cells weui-cells_after-title">
   <view class="weui-cell weui-cell_input">
     <input class="weui-input" bindblur='inputReceivable' placeholder="" value="{{receivable}}"/>
@@ -41,7 +41,7 @@
     <input class="weui-input" bindblur='inputLiability' placeholder="" value="{{liability}}"/>
   </view>
 </view>
-<view class="weui-cells__title">非主业资产</view>
+<view class="weui-cells__title">非主业资产（与主业经营无关的资产，比如制造业公司中的交易性金融资产、可供出售的金融资产、持有至到期投资、银行理财产品、投资性房地产）</view>
 <view class="weui-cells weui-cells_after-title">
   <view class="weui-cell weui-cell_input">
     <input class="weui-input" bindblur='inputSlidelineAsset' placeholder="" value="{{slidelineAsset}}" />
