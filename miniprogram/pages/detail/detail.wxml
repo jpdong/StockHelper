@@ -1,5 +1,11 @@
 <!--miniprogram/pages/detail/detail.wxml-->
 <i-panel class="cell-panel-demo">
+  <i-cell title="股票名称" label="" value="{{stock_name}}"></i-cell>
+</i-panel>
+<i-panel class="cell-panel-demo">
+  <i-cell title="股票代码" label="" value="{{stock_code}}"></i-cell>
+</i-panel>
+<i-panel class="cell-panel-demo">
   <i-cell title="生产资产" label="" value="{{producation_asset}} 亿元"></i-cell>
 </i-panel>
 <i-panel class="cell-panel-demo">
@@ -40,3 +46,13 @@
   <i-cell title="生产资产回报率" label="利润总额/生产资产" value="{{producation_response_ratio}}%"></i-cell>
 </i-panel>
 <view class="text-tips">*与当年社会资本平均回报率比较，越大越好。</view>
+<view hidden="{{!hasEps}}">
+<i-panel class="cell-panel-demo" >
+  <i-cell title="每股收益" label="" value=""></i-cell>
+  <image class="image_box" src='{{epsImageId}}' mode="aspectFit"></image>
+</i-panel>
+</view>
+<i-panel class="cell-panel-demo" >
+  <i-cell title="开发者" label="" value=""></i-cell>
+  <official-account></official-account>
+</i-panel>

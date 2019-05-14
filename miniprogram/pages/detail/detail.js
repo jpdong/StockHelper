@@ -22,6 +22,9 @@ Page({
     moneyLiability_ratio: "",
     slideline_ratio: "",
     producation_response_ratio: "",
+    hasEps:false,
+    epsImageId:"",
+    epsImageUrl:""
   },
 
   /**
@@ -79,7 +82,16 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
-
+    return {
+      title: pageInstance.data.stock_name,
+      imageUrl: pageInstance.data.epsImageUrl,
+      success: function (options) {
+        console.log(options)
+      },
+      fail: function (options) {
+        console.log(options)
+      }
+    }
   }
 })
 
@@ -108,5 +120,21 @@ function showData(id) {
     moneyLiability_ratio: data.moneyLiability_ratio * 100.0,
     slideline_ratio: data.slideline_ratio * 100.0,
     producation_response_ratio: data.producation_response_ratio * 100.0,
+  })
+  var epsFileId = "cloud://stock-dev-a2f995.7374-stock-dev-a2f995/eps_" + pageInstance.data.stock_code +".png"
+  wx.cloud.getTempFileURL({
+    fileList: [epsFileId],
+    success: res => {
+      console.log(res.fileList)
+      if (res.fileList[0].status == 0) {
+        pageInstance.setData({
+          hasEps: true,
+          epsImageId: epsFileId,
+          epsImageUrl:res.fileList[0].tempFileURL
+        })
+      }
+    },
+    fail: err => {
+    }
   })
 }
