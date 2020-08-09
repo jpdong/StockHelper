@@ -1,0 +1,5 @@
+<!--miniprogram/pages/industry/industry_list.wxml-->
+<i-panel wx:for="{{industryList}}" wx:key="{{item._id}}" class="cell-panel-demo">
+  <i-cell title="{{item.industry_name}}" label="热度{{item.visit_num}}" value="" is-link
+    url="../industry_detail/industry_detail?industry_name={{item.industry_name}}"></i-cell>
+</i-panel>

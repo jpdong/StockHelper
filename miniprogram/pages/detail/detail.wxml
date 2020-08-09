@@ -1,4 +1,4 @@
-<!--miniprogram/pages/detail/detail.wxml-->
+<!-- miniprogram/pages/detail/detail.wxml
 <i-panel class="cell-panel-demo">
   <i-cell title="股票名称" label="" value="{{stock_name}}"></i-cell>
 </i-panel>
@@ -51,8 +51,5 @@
   <i-cell title="每股收益" label="" value=""></i-cell>
   <image class="image_box" src='{{epsImageId}}' mode="aspectFit"></image>
 </i-panel>
-</view>
-<i-panel class="cell-panel-demo" >
-  <i-cell title="开发者" label="" value=""></i-cell>
-  <official-account></official-account>
-</i-panel>
+<view class="text-tips">*索罗斯反身性理论中的基本趋势</view>
+</view> -->

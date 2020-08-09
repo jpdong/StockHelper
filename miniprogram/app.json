@@ -2,16 +2,20 @@
   "pages": [
     "pages/report/report",
     "pages/contribution/contribution",
-    "pages/detail/detail"
+    "pages/detail/detail",
+    "pages/stock_detail/stock_detail",
+    "pages/graph_detail/graph_detail",
+    "pages/today_word/today_word",
+    "pages/industry/industry_list",
+    "pages/industry_detail/industry_detail"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#F6F6F6",
-    "navigationBarTitleText": "年报速读",
+    "navigationBarTitleText": "财报帮手",
     "navigationBarTextStyle": "black"
   },
-  "sitemapLocation": "sitemap.json",
   "tabBar": {
     "backgroundColor": "#fff",
     "color": "#CCCCCC",
@@ -21,14 +25,15 @@
         "pagePath": "pages/report/report",
         "iconPath": "images/icon_report.png",
         "selectedIconPath": "images/icon_report_selected.png",
-        "text": "年报"
+        "text": "财报"
       },
       {
-        "pagePath": "pages/contribution/contribution",
-        "iconPath": "images/icon_contribution.png",
-        "selectedIconPath": "images/icon_contribution_selected.png",
-        "text": "贡献"
+        "pagePath": "pages/industry/industry_list",
+        "iconPath": "images/icon_industry.png",
+        "selectedIconPath": "images/icon_industry_selected.png",
+        "text": "行业"
       }
     ]
-  }
+  },
+  "sitemapLocation": "sitemap.json"
 }

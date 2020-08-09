@@ -9,7 +9,7 @@ const cmd = db.command
 // 云函数入口函数
 exports.main = async (event, context) => {
   console.log("skip:" + event.skip + ",size:" + event.size)
-  return db.collection("past_years_data")
+  return db.collection("industry")
   .orderBy('visit_num', 'desc')
   .skip(event.skip)
   .limit(event.size)

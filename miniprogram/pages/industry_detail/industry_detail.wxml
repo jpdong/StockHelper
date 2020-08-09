@@ -1,0 +1,12 @@
+<!--miniprogram/pages/stock-detail/stock-detail.wxml-->
+<view style="margin: 16px"></view>
+<view class="container">
+  <ec-canvas id="roe" canvas-id="chart_roe" ec="{{ roeChart }}" style="width:100%;height:300px;"></ec-canvas>
+  <view class="text-tips">*净资产收益率（Return on Equity，简称ROE），又称股东权益报酬率/净值报酬率/权益报酬率/权益利润率/净资产利润率，是净利润与平均股东权益的百分比，是公司税后利润除以净资产得到的百分比率，该指标反映股东权益的收益水平，用以衡量公司运用自有资本的效率。指标值越高，说明投资带来的收益越高。该指标体现了自有资本获得净收益的能力。</view>
+  <ec-canvas id="cash" canvas-id="chart_cash_flow" ec="{{ cashFlowChart }}" style="width:100%;height:300px;"></ec-canvas>
+  <view class="text-tips">*将企业未来每年的自由现金流，按照设定的折现率，逐笔折现加总，便是该企业的内在价值。</view>
+  <ec-canvas id="eps" canvas-id="chart_eps" ec="{{ epsChart }}" style="width:100%;height:300px;"></ec-canvas>
+  <view class="text-tips">*每股收益即EPS，又称每股税后利润、每股盈余，指税后利润与股本总数的比率。它是测定股票投资价值的重要指标之一，是分析每股价值的一个基础性指标，是综合反映公司获利能力的重要指标，它是公司某一时期净利润与股份数的比率。该比率反映了每股创造的税后利润, 比率越高, 表明所创造的利润就越多。 若公司只有普通股时，每股收益就是税后利润，股份数是指发行在外的普通股股数。如果公司还有优先股，应先从税后利润中扣除分派给优先股股东的利息。</view>
+  <ec-canvas id="deposit" canvas-id="chart_deposit_received" ec="{{ depositReceivedChart }}" style="width:100%;height:300px;"></ec-canvas>
+  <view class="text-tips">*预收账款，是厂商向经销商让利，获取未来产品需求信息提前排产的经营安排。可以更好地掌握市场销情，提前安排生产计划，从容地提升效率，降低成本。</view>
+</view>
